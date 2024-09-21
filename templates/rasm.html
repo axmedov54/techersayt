@@ -1,0 +1,98 @@
+{% load static %}
+{% block content %}
+
+
+
+<style>/* Features bo'limi */
+  #features-details {
+      padding: 60px 0;
+      background-color: #ffffff;
+  }
+  
+  /* Features item uslubi */
+  .features-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start; /* Rasm va kontentni yuqoridan joylashtirish */
+  }
+  
+  /* Rasm bo'limi */
+  .features-item img {
+      max-width: 100%;
+      border-radius: 8px;
+  }
+  
+  /* Kontent bo'limi */
+  .content {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center; /* Matnni markazlashtirish */
+  }
+  
+  /* Kontentdagi matn */
+  .content h3 {
+      font-size: 24px;
+      color: #333;
+      margin: 15px 0; /* Margin qo'shish */
+  }
+  
+  .content p {
+      font-size: 16px;
+      color: #666;
+      margin: 10px 0;
+  }
+  
+  /* Tugma uslubi */
+  .more-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      margin-top: 10px; /* Tugma va matn o'rtasida bo'sh joy */
+  }
+  
+  .more-btn:hover {
+      background-color: #0056b3;
+  }
+  
+</style>
+
+
+<body>
+  <section id="features-details" class="features-details section">
+
+    <div class="container">
+
+      <div class="row gy-4 justify-content-between features-item">
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <img src="{% static 'assets/img/features-1.jpg' %}" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="content">
+            <h3>rasm</h3>
+            <p>
+             <input type="textgdgdggffgdfdsgdsfghfd">
+            </p>
+            <a href="#" class="btn more-btn">Learn More</a>
+          </div>
+        </div>
+
+   
+
+    </div>
+
+  </section>
+  
+</body>
+
+{% endblock content %}

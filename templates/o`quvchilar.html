@@ -1,0 +1,113 @@
+{% block content %}
+
+<!DOCTYPE html>
+
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'quvchilar Ro'yxati</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS faylini ulash -->
+</head>
+<body>
+
+<header>
+    <h1>O'quvchilar Ro'yxati</h1>
+    <style>
+        /* Umumiy uslub */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Yengil fon rangi */
+        }
+        
+        /* Header uslubi */
+        header {
+            background-color: green; /* Mavjud rang */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Rasm uslubi */
+        .profile-image {
+            width: 150px; /* Rasm kengligi */
+            height: 150px; /* Rasm balandligi */
+            border-radius: 50%; /* Doira ko'rinishida qilish */
+            margin: 20px 0; /* Yuqoridan va pastdan bo'sh joy */
+            object-fit: cover; /* Rasmni o'lchash */
+        }
+        
+        /* Section uslubi */
+        #student-list {
+            padding: 40px 20px; /* Yuqoridan va pastdan bo'sh joy */
+        }
+        
+        .container {
+            max-width: 800px; /* Kenglik cheklovi */
+            margin: 0 auto; /* Markazlashtirish */
+        }
+        
+        /* Ro'yxat sarlavhasi */
+        #student-list h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333; /* Sarlavha rangi */
+        }
+        
+        /* Ro'yxat uslubi */
+        ul {
+            list-style-type: none; /* Belgilarni olib tashlash */
+            padding: 0; /* Ichki bo'sh joy */
+        }
+        
+        li {
+            background-color: white; /* Oq fon rangi */
+            border: 1px solid #ddd; /* Chekka */
+            border-radius: 5px; /* Burchaklarni yumshatish */
+            padding: 10px; /* Ichki bo'sh joy */
+            margin: 10px 0; /* Yuqoridan va pastdan bo'sh joy */
+            transition: background-color 0.3s; /* Hover effekti uchun o'tish */
+        }
+        
+        li:hover {
+            background-color: #e9ecef; /* Hover holatida fon rangi */
+        }
+        
+        /* Footer uslubi */
+        footer {
+            background-color: #333; /* Qora fon rangi */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative; /* O'zgarishlar bo'lmasa */
+        }
+    </style>
+</header>
+
+<!-- Rasm joylashtirish -->
+
+
+<section id="student-list">
+    <div class="container">
+        <h2>Ro'yxat</h2>
+        <ul>
+            <img src="https://attic.sh/ezt80md7d751zgr03pnu76oiskvy" alt="Profil rasmi" width="80" height="80">
+            <li>1. Ali Valiyev</li>
+            <img src="https://attic.sh/ezt80md7d751zgr03pnu76oiskvy" alt="Profil rasmi" class="profile-image"> <li>2. Zora Murodova</li>
+            <img src="https://attic.sh/ezt80md7d751zgr03pnu76oiskvy" alt="Profil rasmi" class="profile-image"> <li>3. Jasur Qodirov</li>
+            <img src="https://attic.sh/ezt80md7d751zgr03pnu76oiskvy" alt="Profil rasmi" class="profile-image"> <li>4. Dilorom Sayfiddinova</li>
+            <img src="https://attic.sh/ezt80md7d751zgr03pnu76oiskvy" alt="Profil rasmi" class="profile-image"> <li>5. Bahrombek Asqarov</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 O'quvchilar Ro'yxati. Barcha huquqlar himoyalangan.</p>
+</footer>
+
+</body>
+</html>
+{% endblock content %}

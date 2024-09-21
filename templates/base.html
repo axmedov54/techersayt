@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maktab Sahifasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: green;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+           display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            text-decoration: none;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maktabimizga Xush Kelibsiz!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Biz haqimizda</a></li>
+                <li><a href="#courses">Kurslar</a></li>
+                <li><a href="#contact">Aloqa</a></li>
+                <li><a href="{% url 'royhat' %}">O`quvchilar</a></li>
+                <li><a href="{% url 'test' %}">Testlar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Biz haqimizda</h2>
+        <p>Maktabimiz ta'lim sifatini oshirishga qaratilgan zamonaviy o'quv dasturlari bilan mashhur.</p>
+    </section>
+
+    <section id="courses">
+        <h2>Kurslar</h2>
+        <ul>
+          <li><a href="{% url 'matem' %}">Matematika</a></li>
+          <li><a href="#courses">Fizika</a></li>
+          <li><a href="{% url 'onatili' %}">Onatili</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Aloqa</h2>
+        <p>Biz bilan bog'lanish uchun: <a href="mailto:info@maktab.uz">info@maktab.uz</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Maktabimiz. Barcha huquqlar himoyalangan.</p>
+    </footer>
+ </body>
+ 
+ </html>

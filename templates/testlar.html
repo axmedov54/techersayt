@@ -1,0 +1,134 @@
+
+{% load static %}
+{% block content %}
+
+<style>/* Umumiy uslub */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color:green; /* Yengil fon rangi */
+    }
+    
+    /* Services Section */
+    #services {
+        padding: 60px 0; /* Yuqoridan va pastdan bo'sh joy */
+    }
+    
+    /* Section Title */
+    .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .section-title h2 {
+        font-size: 36px;
+        color: white; /* Sarlavha rangi */
+    }
+    
+    .section-title p {
+        font-size: 18px;
+        color: white; /* Pastki matn rangi */
+    }
+    
+    /* Service Item */
+    .service-item {
+        background-color: #ffffff; /* Oq fon rangi */
+        border-radius: 8px; /* Burchaklarni yumshatish */
+        padding: 20px; /* Ichki bo'sh joy */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Yumshoq soya */
+        transition: transform 0.3s; /* Hover effekti uchun o'tish */
+    }
+    
+    .service-item:hover {
+        transform: translateY(-5px); /* Hover holatida ko'tarilishi */
+    }
+    
+    /* Ikon uslubi */
+    .icon {
+        font-size: 40px; /* Ikon o'lchami */
+        color: #007bff; /* Ikon rangi */
+        margin-bottom: 15px; /* Ikon va matn o'rtasidagi bo'sh joy */
+    }
+    
+    /* Kontent bo'limi */
+    .service-item h3 {
+        font-size: 24px; /* Sarlavha o'lchami */
+        color: black; /* Sarlavha rangi */
+        margin: 15px 0; /* Margin qo'shish */
+    }
+    
+    .service-item p {
+        font-size: 16px; /* Matn o'lchami */
+        color: #666; /* Matn rangi */
+    }
+    
+    /* Tugma uslubi */
+    .read-more {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 16px;
+        color: #007bff; /* Tugma matni rangi */
+        text-decoration: none; /* Matnni chizishdan to'xtatish */
+        transition: color 0.3s; /* Hover effekti uchun o'tish */
+        margin-top: 10px; /* Tugma va matn o'rtasida bo'sh joy */
+    }
+    
+    .read-more:hover {
+        color: #0056b3; /* Hover holatidagi matn rangi */
+    }
+    </style>
+
+
+  <!-- Services Section -->
+<section id="services" class="services section light-background">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Testlar</h2>
+      <p>Fanlardagi Testlarni ishlang</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row g-5">
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item item-cyan position-relative">
+            <i class="bi bi-activity icon"></i>
+            <div>
+              <h3>Matematika</h3>
+              <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item item-orange position-relative">
+            <i class="bi bi-broadcast icon"></i>
+            <div>
+              <h3>Ona Tili</h3>
+              <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item item-teal position-relative">
+            <i class="bi bi-easel icon"></i>
+            <div>
+              <h3>English Tili</h3>
+              <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+    
+     
+      </div>
+
+    </div>
+
+  </section><!-- /Services Section -->
+
+{% endblock content %}
