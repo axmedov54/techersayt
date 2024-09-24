@@ -37,10 +37,13 @@
             margin: 0 auto;
         }
     </style>
-
-    <div class="container">
-        <h3>{{ post.title }}</h3><br><br>
-        <img src="{{ post.photo.url }}" alt="{{ post.title }}" width="200" height="200"><br><br>
-        <h5>{{ post.body }}</h5>
-    </div>
+    {% for post in Posts  %}
+        <div class="container">
+            {% if post.photo %}
+                <h3>{{ post.title }}</h3><br><br>
+                <img src="{{ post.photo.url }}" alt="{{ post.title }}" width="200" height="200"><br><br>
+                <h5>{{ post.body }}</h5>
+            {% endif %}    
+        </div>
+    {% endfor %}    
 {% endblock %}

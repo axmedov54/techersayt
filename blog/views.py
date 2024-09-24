@@ -14,10 +14,8 @@ def OquvchiPage(request):
 def HomePage(request):
     return render(request, 'base.html')
 
-
-
-def RasmPage(request):
-    return render(request, 'rasm.html')
+# def RasmPage(request):
+#     return render(request, 'rasm.html')
 
 def uyPage(request):
     
@@ -42,12 +40,12 @@ def TestPage(request):
 
 
 def Matem(request):
-    Posts = Matematika.objects.all()
-    return render(request,'vazifa.html',{'post':Posts})
+    posts = Matematika.objects.all()  # Model ismi uygun şekilde düzenlenmeli
+    return render(request, 'vazifa.html', {'Posts': posts})
 
-def OnaltliPage(request):
-    Onatili = Onnatili.objects.all()
-    return render(request, 'onatili.html',{'onatili':Onatili})
+def OnatiliPage(request):
+    onatili_list = Onnatili.objects.all()
+    return render(request, 'onatili.html', {'Onatili': onatili_list})
 
 
 

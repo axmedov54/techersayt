@@ -37,10 +37,14 @@
             margin: 0 auto;
         }
     </style>
-
-    <div class="container">
-        <h3>{{ onatili.title }}</h3><br><br>
-        <img src="{{onatili.photo.url }}" alt="{{ onatili.title }}" width="200" height="200"><br><br>
-        <h5>{{ onatili.body }}</h5>
-    </div>
+    {% for onatili in Onatili  %}
+        
+        <div class="container">
+            {% if onatili.photo %}
+                <h3>{{ onatili.title }}</h3><br><br>
+                <img src="{{onatili.photo.url }}" alt="{{ onatili.title }}" width="200" height="200"><br><br>
+                <h5>{{ onatili.body }}</h5>
+            {% endif %}    
+        </div>
+    {% endfor %}    
 {% endblock %}
